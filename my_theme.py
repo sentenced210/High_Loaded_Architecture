@@ -1,7 +1,9 @@
 import flask
 import random
+from flask_cors import CORS
 
 app = flask.Flask("Theme")
+CORS(app)
 cache = {'id': 0}
 
 

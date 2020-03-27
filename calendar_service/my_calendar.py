@@ -1,7 +1,11 @@
 import datetime
 import flask
+from flask_cors import CORS
+
 
 app = flask.Flask("Calendar")
+CORS(app)
+
 cache = {'id': 0}
 
 
